@@ -41,8 +41,8 @@ def main():
         print('-'*100)
         print('\nChannel: {}'.format(url))
 
-        i = 0 # views and time
-        j = 0 # urls
+        i = 0 
+        j = 0 
         for title in video_titles[:num_of_titles]:
             print('\n{}\t{}\t{}\thttps://www.youtube.com{}'.format(title.text, video_views[i].text, video_views[i+1].text, video_urls[j].get('href')))
             i+=2
